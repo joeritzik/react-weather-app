@@ -17,10 +17,12 @@ function App() {
   };
 
   return (
+    <div className="body">
     <Container className="App">
-      <CitySelector onSearch={(city) => setUrl(`${process.env.REACT_APP_API_BASE_URL}/data/2.5/forecast?q=${city}&cnt=5&appid=${process.env.REACT_APP_API_KEY}`)} />
+      <CitySelector onSearch={(city) => setUrl(`${process.env.REACT_APP_API_BASE_URL}/data/2.5/forecast?q=${city}&units=imperial&cnt=5&appid=${process.env.REACT_APP_API_KEY}`)} />
       {getContent()}
     </Container>
+    </div>
   );
 };
 

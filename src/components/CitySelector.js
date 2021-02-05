@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Row, Col, FormControl, Button} from 'react-bootstrap';
+import './CitySelector.css';
 // import {API_BASE_URL, API_KEY} from '../apis/config'
 
 const CitySelector = ({onSearch}) => {
@@ -15,7 +16,7 @@ const CitySelector = ({onSearch}) => {
     <>
       <Row>
         <Col>
-          <h1>Search your city</h1>
+          <h1 className="title">Search your city</h1>
         </Col>
       </Row>
 
